@@ -37,7 +37,7 @@ void listar_tutores() {
     perror("Erro! Arquivo não pôde ser aberto.");
     exit(1);
   }
-  while (fread(&tutor, sizeof(Dono), 1, file)) {
+  while (fread(&tutor, sizeof(Tutor), 1, file)) {
     printf("ID: %d, Nome: %s, Telefone: %s\n", tutor.id, tutor.nome,
            tutor.telefone);
   }
