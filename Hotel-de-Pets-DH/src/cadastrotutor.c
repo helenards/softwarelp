@@ -13,16 +13,6 @@ typedef struct {
   char senha[20];
 } Tutor;
 
-typedef enum { GATO, CACHORRO } EspeciePet;
-
-typedef struct {
-  int id;
-  char nome[50];
-  char raca[20];
-  char idade[2];
-  int tutor_id;
-} Pet;
-
 void cadastrar_tutor() {
   Tutor novo_tutor;
   FILE *file = fopen("donos.dat", "ab");
